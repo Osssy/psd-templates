@@ -1,0 +1,591 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: url(../src/fonts/PTSans-Regular.ttf);
+}
+@font-face {
+  font-family: 'PT Serif';
+  src: url(../src/fonts/PTSerif-Regular.ttf);
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(../src/fonts/MyriadPro-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato';
+  src: url(../src/fonts/Lato-Regular.ttf);
+}
+
+
+
+
+
+
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #3b3b3b;
+    font-family: "PT Sans", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+h1 {
+    color: #ffffff;
+    font-family: "PT Serif", serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 52px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: "PT Serif", serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+}
+h3 {
+    color: #3b3b3b;
+    font-family: "PT Serif", serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+}
+h4 {
+    color: #3b3b3b;
+    font-family: "PT Serif", serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #4b4b4b;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 72%;
+}
+.logo {
+    color: #ff6633;
+    font-family: "PT Serif", serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 160px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ff6633;
+}
+.orange {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ff6633;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* хэдэрушка*/
+header {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.42) 100%);
+    background: url('../src/img/header-bg.jpg') no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+header .container {
+    height: 624px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header .head {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .main-navigation {
+    list-style: none;
+    width: 75%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+} 
+header .main-navigation li, header .main-navigation a {
+    color: #ffffff;
+    font-family: "PT Serif", serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .main-navigation .active {
+    color: #ff6633;
+}
+header .welcome {
+    width: 100%;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header .welcome h2 a {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+header .welcome .buttons {
+    width: 36%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+header .welcome .btn-dark {
+    background-color: #000000;
+    opacity: 0.75;
+}
+header .scroll-down {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-family: "PT Sans", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+}
+header .fa-angle-double-down {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+
+
+
+.about {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 992px;
+    background: #f7f7f7;
+}
+.about .container {
+    height: 752px;
+    width: 86%;
+}
+.about-row1 {
+    display: flex;
+    justify-content: space-between;
+}
+.about-description {
+    padding-top: 60px;
+    width: 40%;
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-description .btn {
+    align-self: flex-end;
+}
+.about-row2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: -108px;
+}
+
+
+
+.tasteful {
+    height: 696px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tasteful .container {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.tasteful-gallery {
+    width: 50%;
+    height: 456px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tasteful-gallery__row1 {
+    display: flex;
+    justify-content: space-between;
+}
+.tasteful-description {
+    width: 48%;
+    height: 332px;
+    padding-top: 60px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.tasteful-description .btn {
+    align-self: flex-end;
+}
+
+
+
+
+.reservation-events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+    width: 100%;
+    height: 846px;
+}
+.reservation-events .container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reservation, .events {
+    width: 48.5%;
+    height: 598px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+.reservation form {
+    width: 310px;
+    height: 402px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 72px 72px 117px;
+}
+.reservation form input[type=text], .reservation form input[type=date], .reservation form input[type=time] {
+    position: relative;
+    width: 310px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #e5e4e4;
+    background-color: #f7f7f7;
+    padding: 20px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    color: #555555;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.reservation form input[type=button] {
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    width: 310px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #222222;
+    border: none;
+}
+.reservation form input.user-icon {
+    background: url('../src/img/user-icon.png') no-repeat 275px;
+}
+.reservation form input.date-icon {
+    background: url('../src/img/date-icon.png') no-repeat 275px;
+}
+.reservation form input.time-icon {
+    background: url('../src/img/time-icon.png') no-repeat 275px;
+}.reservation form input.commensals-icon {
+    background: url('../src/img/commensals-icon.png') no-repeat 275px;
+}
+.events-container {
+    width: 373px;
+    height: 459px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 72px 54px 59px 28px;
+}
+.event {
+    display: flex;
+    justify-content: space-between;
+}
+.event-description {
+    width: 76%;
+}
+.event-description h5 {
+    color: #ff6633;
+    font-family: "PT Serif", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+.event-description .date, .event-description .time {
+    display: inline-block;
+    width: 95px;
+    margin-right: 5px;
+    font-family: "PT Sans", sans-serif;
+    line-height: 20px;
+    color: #3b3b3b;
+    font-size: 12px;
+    font-weight: 700;
+}
+.event-description img {
+    margin-right: 5px;
+    margin-bottom: -1px; 
+}
+.event-description .time {
+    text-transform: uppercase;
+}
+.event-description p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3b3b3b;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.event-description a {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ff6633;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+
+
+
+.share {
+    width: 100%;
+    height: 421px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share .container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.share-container {
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share .bookmark {
+    width: 38%;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.share .or {
+    width: 4%;
+    height: 188px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #9a9999;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.share .divider-line-above, .share .divider-line-below {
+    width: 1px;
+    height: 66px;
+    background-color: #9a9999;
+    opacity: 0.4;
+}
+.share .tell {
+    width: 40%;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.share .btn-fb, .share .btn-tw {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    width: 60px;
+    height: 20px;
+    border-radius: 3px;
+}
+.fa-facebook-official, .fa-twitter {
+    opacity: 0.99;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-right: -10px;
+}
+.share .btn-fb {
+    background: #3e59a5;
+}
+.share .btn-tw {
+    background: #1b95e0;
+}
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 305px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222222;
+}
+footer .container {
+    height: 184px;
+    display: flex;
+    justify-content: space-between;
+}
+footer h5 {
+    color: #ffffff;
+    font-family: "PT Serif", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 10px 0 15px 0;
+    margin: 0;
+}
+footer .navigation {
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer ul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+footer .visit-us {
+    width: 27%;
+    height: 159px;
+}
+footer .visit-us p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ffffff;
+}
+footer .visit-us a {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ff6633;
+}
+footer .socials {
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .socials a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+
+
+
